@@ -1,0 +1,29 @@
+#
+smtp_config:
+  user: "yourmail@gmail.com" #user/mail
+  password: "gmail_password" #password
+  host: "smtp.gmail.com" #hostname/smtp server
+  port: "465" #port
+  mode: "ssl"# ssl or tls
+#  
+email_config:
+  user: "Minecraft Server" #Who send the email
+  from: "yourmail@gmail.com" 
+  to: "anothergmail@gmail.com" #where the messages will be received
+#  
+reasons:
+  shutdown/restart:
+    enable: false
+    subject: "Minecraft Server"
+    text: "This is an email sent by EmailOnShutdown. Your server has been shut down or has been rebooted."
+  0players:
+    enable: false
+    subject: "Minecraft Server"
+    text: "Ups, It appears that all the players have been disconnected, something is wrong?"
+  low_tps:
+    enable: false
+    at: 16.0 # tps
+    how_often: 10 # In Minits
+    subject: "Minecraft Server"
+    text: "Ups, your server has a tps problem!"
+#

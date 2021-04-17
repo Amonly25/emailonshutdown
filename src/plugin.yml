@@ -1,0 +1,6 @@
+name: EmailOnShutdown
+main: org.askgaming.emailonshutdown.Main
+version: 1.0
+author: AMONLY
+commands:
+  smtp:
